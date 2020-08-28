@@ -1,6 +1,6 @@
 const path = require("path");
 
-modules.export = function(app) {
+module.exports = function(app) {
     // get route for home or anything besides exercise or stats page
     app.get("/", function(req, res) { 
         res.sendFile(path.join(__dirname, "../public/index.htnl"));
